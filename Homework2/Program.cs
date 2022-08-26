@@ -37,12 +37,12 @@ namespace Homework2
             {
                 //arr[i] = Convert.ToInt32(Console.ReadLine());
                 arr[i] = Math.Round(random.NextDouble() * 10, 2);
-                sum += arr[i];
-                if ((arr[i] * 100) % 2 == 0)
+                sum += arr[i]; //общая сумма
+                if ((arr[i] * 100) % 2 == 0) //сумма четных
                 {
-                    sumto += arr[i];
+                    sumto += arr[i]; 
                 }
-                if(i == 0)
+                if(i == 0) //общее произведение
                 {
                     mult = arr[i];
                 }
@@ -58,9 +58,9 @@ namespace Homework2
                 for(int j = 0; j < col; j++)
                 {
                     arr2[i, j] = Math.Round(random.NextDouble() * 10, 2);
-                    sum += arr2[i, j];
-                    mult = arr2[i, j];
-                    if (j % 2 != 0)
+                    sum += arr2[i, j]; //общая сумма
+                    mult = arr2[i, j]; //общее произведение
+                    if (j % 2 != 0) //сумма не четных столбцов
                     {
                         sumB += arr2[i, j];
                     }
